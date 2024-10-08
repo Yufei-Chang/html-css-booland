@@ -1,0 +1,111 @@
+/* Debug */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* COMMON */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* debug */
+    min-height: 500px;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+}
+
+.text-image {
+    position: absolute;
+    padding: 5px;
+}
+
+.heart {
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.discount {
+    color: white;
+    background-color: red;
+    bottom: 80px;
+}
+
+.sost {
+    color: white;
+    background-color: green;
+    bottom: 80px;
+    left: 40px;
+}
+
+.type {
+    font-weight: 650;
+}
+
+.disc-pri {
+    color: red;
+    font-size: 0.8em;
+}
+
+.org-pri {
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+
+/* LAYOUT */
+.section {
+    padding: 80px;
+}
+
+.col-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(90%/3);
+    /* debug */
+    border: 1px solid black;
+}
+
+.card {
+    position: relative;
+}
+
+.back-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* HOVER */
+.card:hover .front-card {
+    position: relative;
+    z-index: -2;
+}
+
+.heart:hover {
+    color: red;
+}
