@@ -73,21 +73,26 @@ header {
     position: absolute;
     top: 10px;
     right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;    
 }
 
 .text-image {
     color: white;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
 }
 
 .discount {
-    position: absolute;
     background-color: red;
     top: 190px;
     left: 0;
 }
 
 .sost {
-    position: absolute;
     background-color: green;
     top: 190px;
     left: 30px;
@@ -116,7 +121,7 @@ header {
 
 /* LAYOUT */
 .section {
-    padding: 80px;
+    padding: 80px 0;
 }
 
 .column {
